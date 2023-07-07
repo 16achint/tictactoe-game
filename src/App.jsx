@@ -11,7 +11,7 @@ function App() {
   const [currentMove, SetCurrentMove] = useState(0);
   const gamingBoard = history[currentMove];
 
-  const winner = calcualteWinner(gamingBoard.squares);
+  const { winner, winningSquares } = calcualteWinner(gamingBoard.squares);
 
   console.log({ history, currentMove });
 
@@ -60,6 +60,7 @@ function App() {
       <Board
         squares={gamingBoard.squares}
         handleSquareClick={handleSquareClick}
+        winningSquares={winningSquares}
       />
       <button
         type="button"
