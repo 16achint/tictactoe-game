@@ -10,10 +10,7 @@ function App() {
   const [history, setHistory] = useState(NEW_GAME);
   const [currentMove, SetCurrentMove] = useState(0);
   const gamingBoard = history[currentMove];
-
   const { winner, winningSquares } = calcualteWinner(gamingBoard.squares);
-
-  console.log({ history, currentMove });
 
   const handleSquareClick = clickPosition => {
     if (gamingBoard.squares[clickPosition] || winner) {
