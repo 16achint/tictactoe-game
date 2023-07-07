@@ -71,6 +71,7 @@ function App() {
       </button>
       <h3 style={{ fontWeight: 'normal' }}>Current game history</h3>
       <History history={history} moveTo={moveTo} currentMove={currentMove} />
+      <div className="bg-balls" />
     </div>
   );
 }
