@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Square = ({ value, onClick, isWinningSquare }) => {
   const colorClassName = value === 'X' ? `text-green` : `text-orange`;
-  const winningClassName = isWinningSquare ? 'winning' : 'isWinningSquare';
+  const winningClassName = isWinningSquare ? 'winning' : '';
   return (
     <button
       type="button"
